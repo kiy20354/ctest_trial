@@ -1,0 +1,3 @@
+C:/work/kiy/git/ctest_trial/build/CMakeFiles/RUN_TESTS.dir
+C:/work/kiy/git/ctest_trial/build/CMakeFiles/ALL_BUILD.dir
+C:/work/kiy/git/ctest_trial/build/CMakeFiles/ZERO_CHECK.dir

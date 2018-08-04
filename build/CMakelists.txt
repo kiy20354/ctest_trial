@@ -1,0 +1,19 @@
+cmake_minimum_required(VERSION 3.0.2)
+enable_testing()
+
+add_test(NAME hoge
+	COMMAND  a
+	)
+	
+
+file(GLOB_RECURSE  iplists bin/*.ini)
+
+message("${iplists}") # a.cpp;b.cpp;c.cpp
+
+foreach(path IN LISTS iplists)
+	get_filename_component(target ${path} NAME_WE)
+	message("a: ${target}: ${path}") # a.cpp;b.cpp;c.cpp
+  add_test(NAME ${target} COMMAND "SagradaCui" "--list  ${path}" 
+  			WORKING_DIRECTORY  /bin/SAGRADA)
+endforeach()
+
